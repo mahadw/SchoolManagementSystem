@@ -1,0 +1,45 @@
+﻿@model IEnumerable<School_Management_System.Models.Students_Marks>
+
+@{
+    ViewBag.Title = "School Management System";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Student_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Subject)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Marks)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Student_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Subject)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Marks)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Student_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Student_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Student_ID })
+        </td>
+    </tr>
+}
+
+</table>

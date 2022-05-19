@@ -1,0 +1,81 @@
+﻿@model School_Management_System.Models.New_Admission
+
+@{
+    ViewBag.Title = "School Management System";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>New_Admission</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Student_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student_ID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.First_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.First_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Last_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Last_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Father_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Father_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mobile_No)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mobile_No)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Previous_Class)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Previous_Class)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Previous_Result)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Previous_Result)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Admission_Class)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Admission_Class)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Student_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
